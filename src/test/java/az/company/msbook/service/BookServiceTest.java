@@ -55,7 +55,7 @@ class BookServiceTest {
     }
 
     @Test
-    void getAllBooks() {
+    void getAllBooksTest() {
         //given
         var bookDto = new BookDto();
         bookDto.setName("Test name");
@@ -79,7 +79,7 @@ class BookServiceTest {
     }
 
     @Test
-    void getBookById() {
+    void getBookByIdTest() {
         //given
         Long id = 1L;
 
@@ -102,7 +102,7 @@ class BookServiceTest {
     }
 
     @Test
-    void updateBook() {
+    void updateBookTest() {
         //given
         var book = new Book();
         book.setId(1L);
@@ -129,7 +129,7 @@ class BookServiceTest {
     }
 
     @Test
-    void deleteBookById() {
+    void deleteBookByIdTest() {
         var book = new Book();
         book.setId(1L);
         book.setName("Test name");
